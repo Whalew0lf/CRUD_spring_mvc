@@ -32,13 +32,13 @@ public class UserController {
     }
 
     @GetMapping("/edit/{id}")
-    public String openUserUpdatePage(@PathVariable("id") long id, ModelMap model) {
+    public String openUserUpdatePage(@PathVariable("id") long id, User user) {
 
         return "edit";
     }
 
     @PostMapping("/edit/{id}")
-    public String openUserUpdatePage(@PathVariable("id") long id, @ModelAttribute("user") User user) {
+    public String oatePage(@PathVariable("id") long id, @ModelAttribute("user") User user) {
         user.setId(id);
         return "redirect:/users";
     }
