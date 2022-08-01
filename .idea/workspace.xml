@@ -9,7 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="263a3764-e95f-498c-a867-ce7eb67d569c" name="Changes" comment="Почти гототово" />
+    <list default="true" id="263a3764-e95f-498c-a867-ce7eb67d569c" name="Changes" comment="Почти гототово">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +70,8 @@
     "last_opened_file_path": "D:/Util/JAVA/PP_2_2_2_spring-mvc",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "spring.configuration.checksum": "c9a3baf525021fd77f864fc5fc5a777c"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -178,7 +181,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659277961590</updated>
       <workItem from="1659277962861" duration="5644000" />
-      <workItem from="1659284044014" duration="17579000" />
+      <workItem from="1659284044014" duration="17703000" />
+      <workItem from="1659390934545" duration="503000" />
     </task>
     <task id="LOCAL-00001" summary="Почти гототово">
       <created>1659303362072</created>
@@ -194,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659304631055</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Почти гототово">
+      <created>1659304923207</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659304923207</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
