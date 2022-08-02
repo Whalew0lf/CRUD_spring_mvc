@@ -4,6 +4,7 @@ import org.example.model.User;
 import org.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
@@ -31,15 +32,30 @@ public class UserController {
         return "redirect:/users";
     }
 
-    @GetMapping("/edit/{id}")
-    public String openUserUpdatePage(@PathVariable("id") long id, User user) {
-
+    @PostMapping("/edit")
+    public String openUserUpdatePage(@RequestParam("userId") long id, Model model) {
+        User user = new User();
+        user.setId(id);
+        model.addAttribute("user", user);
         return "edit";
     }
 
-    @PostMapping("/edit/{id}")
-    public String oatePage(@PathVariable("id") long id, @ModelAttribute("user") User user) {
-        user.setId(id);
+    @PostMapping("/update")
+    public String editUser(User user) {
+        userService.updateUser(user);
+        return "redirect:/users";
+    }
+
+    @GetMapping("/create")
+    public String openUserCreatePage(Model model) {
+        User user = new User();
+        model.addAttribute("user", user);
+        return "create";
+    }
+
+    @PostMapping("/create")
+    public String addUser(User user) {
+        userService.addUser(user);
         return "redirect:/users";
     }
 }

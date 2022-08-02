@@ -26,7 +26,7 @@ public class UserServiceImp implements UserService {
     }
 
     @Override
-    public void addUser(String name, int age, String city) {
+    public void addUser(User user) {
 
     }
 
